@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FilePermission Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/FilePermission" class="dashAnchor"></a>
+
+    <a title="FilePermission Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          Pathos Docs
+        </a>
+         (79% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">Pathos Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      FilePermission Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Manipulating Paths.html">Manipulating Paths</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Manipulating Paths.html#/s:6Pathos10deletePath_9recursiveySS_SbtKF">deletePath(_:recursive:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Global Variables.html">Other Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Global Variables.html#/s:6Pathos25defaultTemporaryDirectorySSvp">defaultTemporaryDirectory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Global Variables.html#/s:6Pathos13pathSeparatorSSvp">pathSeparator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Global Variables.html#/s:6Pathos22pathSeparatorCharacterSJvp">pathSeparatorCharacter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PathosError.html">PathosError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SystemError.html">SystemError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Functions.html">Other Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos12absolutePath02ofC0S2S_tKF">absolutePath(ofPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos10accessTime6atPathAA04FileC0VSS_tKF">accessTime(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos3add_6toPathyAA14FilePermissionV_SStKF">add(_:toPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos8basename6ofPathS2S_tF">basename(ofPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos12blockDevices6inPath9recursiveSaySSGSS_SbtKF">blockDevices(inPath:recursive:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos16characterDevices6inPath9recursiveSaySSGSS_SbtKF">characterDevices(inPath:recursive:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos8children6inPath9recursiveSaySSGSS_SbtKF">children(inPath:recursive:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos10commonPath10amongPaths__S2S_S2SdtF">commonPath(amongPaths:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF">copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF">createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos18createSymbolicLink8fromPath02toF0ySS_SStKF">createSymbolicLink(fromPath:toPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos24createTemporaryDirectory6suffix6prefix02inD0S2SSg_A2FtKF">createTemporaryDirectory(suffix:prefix:inDirectory:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos19createTemporaryFile6suffix6prefix11inDirectoryS2S_S2SSgtKF">createTemporaryFile(suffix:prefix:inDirectory:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos11directories6inPath9recursiveSaySSGSS_SbtKF">directories(inPath:recursive:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos9directory6ofPathS2S_tF">directory(ofPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos6exists6atPath12followSymbolSbSS_SbtF">exists(atPath:followSymbol:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos19expandUserDirectory6inPathS2S_tKF">expandUserDirectory(inPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos13fileExtension6ofPathS2S_tF">fileExtension(ofPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos5files6inPath9recursiveSaySSGSS_SbtKF">files(inPath:recursive:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos26getCurrentWorkingDirectorySSyKF">getCurrentWorkingDirectory()</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos4globySaySSGSSKF">glob(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos10isAbsolute4pathSbSS_tF">isAbsolute(path:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos13isBlockDevice6atPathSbSS_tKF">isBlockDevice(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos17isCharacterDevice6atPathSbSS_tKF">isCharacterDevice(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos11isDirectory6atPathSbSS_tKF">isDirectory(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos6isFile6atPathSbSS_tKF">isFile(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos6isPipe6atPathSbSS_tKF">isPipe(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos8isSocket6atPathSbSS_tKF">isSocket(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos14isSymbolicLink6atPathSbSS_tKF">isSymbolicLink(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos4join5pathsSSSaySSG_tF">join(paths:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos4join5paths__S2S_S2SdtF">join(paths:_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos18metadataChangeTime6atPathAA04FileD0VSS_tKF">metadataChangeTime(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos16modificationTime6atPathAA04FileC0VSS_tKF">modificationTime(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos8movePath_02toC0ySS_SStKF">movePath(_:toPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos9normalize4pathS2S_tF">normalize(path:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos11permissions7forPathAA14FilePermissionVSS_tKF">permissions(forPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos5pipes6inPath9recursiveSaySSGSS_SbtKF">pipes(inPath:recursive:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos9readBytes6atPathSays5UInt8VGSS_tKF">readBytes(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos10readString6atPathS2S_tKF">readString(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos16readSymbolicLink6atPathS2S_tKF">readSymbolicLink(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos8realPath02ofC0S2S_tKF">realPath(ofPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos12relativePath02ofC0S2S_tKF">relativePath(ofPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos12relativePath02ofC0012startingFromC0S2S_SStF">relativePath(ofPath:startingFromPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos6remove_7forPathyAA14FilePermissionV_SStKF">remove(_:forPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos8sameFile6atPath05otherE0SbSS_SStKF">sameFile(atPath:otherPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos34searchForDefaultTemporaryDirectorySSyF">searchForDefaultTemporaryDirectory()</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos3set_7forPathyAA14FilePermissionV_SStKF">set(_:forPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos26setCurrentWorkingDirectory6toPathySS_tKF">setCurrentWorkingDirectory(toPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos4size6atPaths5Int64VSS_tKF">size(atPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos7sockets6inPath9recursiveSaySSGSS_SbtKF">sockets(inPath:recursive:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos5split4pathSS_SStSS_tF">split(path:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos14splitExtension6ofPathSS_SStSS_tF">splitExtension(ofPath:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos13symbolicLinks6inPath9recursiveSaySSGSS_SbtKF">symbolicLinks(inPath:recursive:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos16unknownTypeFiles6inPath9recursiveSaySSGSS_SbtKF">unknownTypeFiles(inPath:recursive:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos22withTemporaryDirectory6suffix6prefix02inD013performActionySS_S2SSgySSKctKF">withTemporaryDirectory(suffix:prefix:inDirectory:performAction:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos20withWorkingDirectory9beingPath13performActionySS_yyKctKF">withWorkingDirectory(beingPath:performAction:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos5write_6atPath17createIfNecessary10permissionySS_SSSbAA14FilePermissionVSgtKF">write(_:atPath:createIfNecessary:permission:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:6Pathos5write_6atPath17createIfNecessary10permissionyx_SSSbAA14FilePermissionVSgtKSlRzSz7ElementRpzlF">write(_:atPath:createIfNecessary:permission:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PathRepresentable.html">PathRepresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/FilePermission.html">FilePermission</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/FileTime.html">FileTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Path.html">Path</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>FilePermission</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FilePermission</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents the POSIX file permission bits. These bits determines read/write/execution access to a file as
+well as some miscellaneous information.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV8rawValues6UInt16Vvp"></a>
+                    <a name="//apple_ref/swift/Property/rawValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV8rawValues6UInt16Vvp">rawValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The file permission as the native <code>mode_t</code> type. A de-abstraction to help interact with POSIX APIs directly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="n">mode_t</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV8rawValueACs6UInt16V_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(rawValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV8rawValueACs6UInt16V_tcfc">init(rawValue:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>FilePermission</code> from native <code>mode_t</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="n">mode_t</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV8ownerAllACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ownerAll" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV8ownerAllACvpZ">ownerAll</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is equivalent to <code>[.ownerRead, .ownerWrite, .ownerExecute]</code> (<code>S_IRWXU</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ownerAll</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV9ownerReadACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ownerRead" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV9ownerReadACvpZ">ownerRead</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read permission bit for the owner of the file (<code>S_IRUSR</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ownerRead</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV10ownerWriteACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ownerWrite" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV10ownerWriteACvpZ">ownerWrite</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Write permission bit for the owner of the file (<code>S_IWUSR</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ownerWrite</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV12ownerExecuteACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ownerExecute" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV12ownerExecuteACvpZ">ownerExecute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Execute (for ordinary files) or search (for directories) permission bit for the owner of the file (<code>S_IXUSR</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ownerExecute</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV8groupAllACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/groupAll" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV8groupAllACvpZ">groupAll</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is equivalent to <code>[.groupRead, .groupWrite, .groupExecute]</code> (<code>S_IRWXG</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">groupAll</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV9groupReadACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/groupRead" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV9groupReadACvpZ">groupRead</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read permission bit for the group owner of the file (<code>S_IRGRP</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">groupRead</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV10groupWriteACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/groupWrite" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV10groupWriteACvpZ">groupWrite</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Write permission bit for the group owner of the file (<code>S_IWGRP</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">groupWrite</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV12groupExecuteACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/groupExecute" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV12groupExecuteACvpZ">groupExecute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Execute or search permission bit for the group owner of the file (<code>S_IXGRP</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">groupExecute</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV8otherAllACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/otherAll" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV8otherAllACvpZ">otherAll</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is equivalent to <code>[.otherRead, .otherWrite, .otherExecute]</code> (<code>S_IRWXO</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">otherAll</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV9otherReadACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/otherRead" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV9otherReadACvpZ">otherRead</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read permission bit for other users (<code>S_IROTH</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">otherRead</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV10otherWriteACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/otherWrite" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV10otherWriteACvpZ">otherWrite</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Write permission bit for other users (<code>S_IWOTH</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">otherWrite</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV12otherExecuteACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/otherExecute" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV12otherExecuteACvpZ">otherExecute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Execute or search permission bit for other users (<code>S_IXOTH</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">otherExecute</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV20setUserIDOnExecutionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/setUserIDOnExecution" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV20setUserIDOnExecutionACvpZ">setUserIDOnExecution</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is the set-user-ID on execute bit.
+See <a href="http://www.gnu.org/software/libc/manual/html_node/Process-Persona.html#Process-Persona">Process Persona</a>
+to learm more.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">setUserIDOnExecution</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV21setGroupIDOnExecutionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/setGroupIDOnExecution" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV21setGroupIDOnExecutionACvpZ">setGroupIDOnExecution</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is the set-group-ID on execute bit
+See <a href="http://www.gnu.org/software/libc/manual/html_node/Process-Persona.html#Process-Persona">Process Persona</a>
+to learm more.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">setGroupIDOnExecution</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV24saveSwappedTextAfterUserACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/saveSwappedTextAfterUser" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV24saveSwappedTextAfterUserACvpZ">saveSwappedTextAfterUser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is the sticky bit.</p>
+
+<p>For a directory it gives permission to delete a file in that directory only if you own that file.
+Ordinarily, a user can either delete all the files in a directory or cannot delete any of them (based on
+whether the user has write permission for the directory). The same restriction applies—you must have
+both write permission for the directory and own the file you want to delete. The one exception is that
+the owner of the directory can delete any file in the directory, no matter who owns it (provided the
+owner has given himself write permission for the directory). This is commonly used for the /tmp
+directory, where anyone may create files but not delete files created by other users.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">saveSwappedTextAfterUser</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s27ExpressibleByIntegerLiteralP07integerD0x0cD4TypeQz_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(integerLiteral:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s27ExpressibleByIntegerLiteralP07integerD0x0cD4TypeQz_tcfc">init(integerLiteral:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">integerLiteral</span><span class="p">:</span> <span class="kt">UInt16</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2019 <a class="link" href="https://github.com/dduan/Pathos" target="_blank" rel="external">Daniel Duan</a>. All rights reserved. (Last updated: 2019-03-17)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
