@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
@@ -14,363 +15,378 @@
     <a title="Other Global Variables  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Pathos Docs</a> (79% documented)</p>
+        <p>
+          <a href="index.html">Pathos Docs</a>
+          <span class="no-mobile"> (79% documented)</span>
+        </p>
+    
+    
       </div>
     </header>
-    <div class="content-wrapper">
-      <p id="breadcrumbs">
-        <a href="index.html">Pathos Reference</a>
-        <img id="carat" src="img/carat.png" />
-        Other Global Variables  Reference
-      </p>
+    <div id="breadcrumbs-container">
+      <div class="content-wrapper">
+        <p id="breadcrumbs">
+          <span class="no-mobile">
+            <a href="index.html">Pathos Reference</a>
+            <img id="carat" src="img/carat.png" />
+          </span>
+          Other Global Variables  Reference
+        </p>
+      </div>
     </div>
-    <div class="content-wrapper">
-      <nav class="sidebar">
-        <ul class="nav-groups">
-          <li class="nav-group-name">
-            <a href="Manipulating Paths.html">Manipulating Paths</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Manipulating Paths.html#/s:6Pathos10deletePath_9recursiveySS_SbtKF">deletePath(_:recursive:)</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Other Global Variables.html">Other Global Variables</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Other Global Variables.html#/s:6Pathos25defaultTemporaryDirectorySSvp">defaultTemporaryDirectory</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Global Variables.html#/s:6Pathos13pathSeparatorSSvp">pathSeparator</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Global Variables.html#/s:6Pathos22pathSeparatorCharacterSJvp">pathSeparatorCharacter</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Other Enums.html">Other Enumerations</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Enums/PathosError.html">PathosError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/SystemError.html">SystemError</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Other Functions.html">Other Functions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos12absolutePath02ofC0S2S_tKF">absolutePath(ofPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos10accessTime6atPathAA04FileC0VSS_tKF">accessTime(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos3add_6toPathyAA14FilePermissionV_SStKF">add(_:toPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos8basename6ofPathS2S_tF">basename(ofPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos12blockDevices6inPath9recursiveSaySSGSS_SbtKF">blockDevices(inPath:recursive:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos16characterDevices6inPath9recursiveSaySSGSS_SbtKF">characterDevices(inPath:recursive:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos8children6inPath9recursiveSaySSGSS_SbtKF">children(inPath:recursive:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos10commonPath10amongPaths__S2S_S2SdtF">commonPath(amongPaths:_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF">copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF">createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos18createSymbolicLink8fromPath02toF0ySS_SStKF">createSymbolicLink(fromPath:toPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos24createTemporaryDirectory6suffix6prefix02inD0S2SSg_A2FtKF">createTemporaryDirectory(suffix:prefix:inDirectory:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos19createTemporaryFile6suffix6prefix11inDirectoryS2S_S2SSgtKF">createTemporaryFile(suffix:prefix:inDirectory:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos11directories6inPath9recursiveSaySSGSS_SbtKF">directories(inPath:recursive:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos9directory6ofPathS2S_tF">directory(ofPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos6exists6atPath12followSymbolSbSS_SbtF">exists(atPath:followSymbol:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos19expandUserDirectory6inPathS2S_tKF">expandUserDirectory(inPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos13fileExtension6ofPathS2S_tF">fileExtension(ofPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos5files6inPath9recursiveSaySSGSS_SbtKF">files(inPath:recursive:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos26getCurrentWorkingDirectorySSyKF">getCurrentWorkingDirectory()</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos4globySaySSGSSKF">glob(_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos10isAbsolute4pathSbSS_tF">isAbsolute(path:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos13isBlockDevice6atPathSbSS_tKF">isBlockDevice(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos17isCharacterDevice6atPathSbSS_tKF">isCharacterDevice(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos11isDirectory6atPathSbSS_tKF">isDirectory(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos6isFile6atPathSbSS_tKF">isFile(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos6isPipe6atPathSbSS_tKF">isPipe(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos8isSocket6atPathSbSS_tKF">isSocket(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos14isSymbolicLink6atPathSbSS_tKF">isSymbolicLink(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos4join5pathsSSSaySSG_tF">join(paths:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos4join5paths__S2S_S2SdtF">join(paths:_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos18metadataChangeTime6atPathAA04FileD0VSS_tKF">metadataChangeTime(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos16modificationTime6atPathAA04FileC0VSS_tKF">modificationTime(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos8movePath_02toC0ySS_SStKF">movePath(_:toPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos9normalize4pathS2S_tF">normalize(path:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos11permissions7forPathAA14FilePermissionVSS_tKF">permissions(forPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos5pipes6inPath9recursiveSaySSGSS_SbtKF">pipes(inPath:recursive:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos9readBytes6atPathSays5UInt8VGSS_tKF">readBytes(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos10readString6atPathS2S_tKF">readString(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos16readSymbolicLink6atPathS2S_tKF">readSymbolicLink(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos8realPath02ofC0S2S_tKF">realPath(ofPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos12relativePath02ofC0S2S_tKF">relativePath(ofPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos12relativePath02ofC0012startingFromC0S2S_SStF">relativePath(ofPath:startingFromPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos6remove_7forPathyAA14FilePermissionV_SStKF">remove(_:forPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos8sameFile6atPath05otherE0SbSS_SStKF">sameFile(atPath:otherPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos34searchForDefaultTemporaryDirectorySSyF">searchForDefaultTemporaryDirectory()</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos3set_7forPathyAA14FilePermissionV_SStKF">set(_:forPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos26setCurrentWorkingDirectory6toPathySS_tKF">setCurrentWorkingDirectory(toPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos4size6atPaths5Int64VSS_tKF">size(atPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos7sockets6inPath9recursiveSaySSGSS_SbtKF">sockets(inPath:recursive:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos5split4pathSS_SStSS_tF">split(path:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos14splitExtension6ofPathSS_SStSS_tF">splitExtension(ofPath:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos13symbolicLinks6inPath9recursiveSaySSGSS_SbtKF">symbolicLinks(inPath:recursive:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos16unknownTypeFiles6inPath9recursiveSaySSGSS_SbtKF">unknownTypeFiles(inPath:recursive:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos22withTemporaryDirectory6suffix6prefix02inD013performActionySS_S2SSgySSKctKF">withTemporaryDirectory(suffix:prefix:inDirectory:performAction:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos20withWorkingDirectory9beingPath13performActionySS_yyKctKF">withWorkingDirectory(beingPath:performAction:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos5write_6atPath17createIfNecessary10permissionySS_SSSbAA14FilePermissionVSgtKF">write(_:atPath:createIfNecessary:permission:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other Functions.html#/s:6Pathos5write_6atPath17createIfNecessary10permissionyx_SSSbAA14FilePermissionVSgtKSlRzSz7ElementRpzlF">write(_:atPath:createIfNecessary:permission:)</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Other Protocols.html">Other Protocols</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Protocols/PathRepresentable.html">PathRepresentable</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Other Structs.html">Other Structures</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Structs/FilePermission.html">FilePermission</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/FileTime.html">FileTime</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Path.html">Path</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <article class="main-content">
-        <section>
-          <section class="section">
-            <h1>Other Global Variables</h1>
-            <p>The following global variables are available globally.</p>
+    <div class="wrapper">
+      <div class="article-wrapper">
+        <article class="main-content">
+          <section>
+            <section class="section">
+              <h1>Other Global Variables</h1>
+              <p>The following global variables are available globally.</p>
 
-          </section>
-          <section class="section task-group-section">
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos22pathSeparatorCharacterSJvp"></a>
-                    <a name="//apple_ref/swift/Global/pathSeparatorCharacter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos22pathSeparatorCharacterSJvp">pathSeparatorCharacter</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">pathSeparatorCharacter</span><span class="p">:</span> <span class="kt">Character</span></code></pre>
+            </section>
+            <section class="section task-group-section">
+              <div class="task-group">
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:6Pathos22pathSeparatorCharacterSJvp"></a>
+                      <a name="//apple_ref/swift/Global/pathSeparatorCharacter" class="dashAnchor"></a>
+                      <a class="token" href="#/s:6Pathos22pathSeparatorCharacterSJvp">pathSeparatorCharacter</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Undocumented</p>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos13pathSeparatorSSvp"></a>
-                    <a name="//apple_ref/swift/Global/pathSeparator" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos13pathSeparatorSSvp">pathSeparator</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">pathSeparatorCharacter</span><span class="p">:</span> <span class="kt">Character</span></code></pre>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">pathSeparator</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:6Pathos13pathSeparatorSSvp"></a>
+                      <a name="//apple_ref/swift/Global/pathSeparator" class="dashAnchor"></a>
+                      <a class="token" href="#/s:6Pathos13pathSeparatorSSvp">pathSeparator</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Undocumented</p>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos25defaultTemporaryDirectorySSvp"></a>
-                    <a name="//apple_ref/swift/Global/defaultTemporaryDirectory" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos25defaultTemporaryDirectorySSvp">defaultTemporaryDirectory</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The name of the directory used for temporary files. This defines the default value for the <code>directory</code>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">pathSeparator</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="task-group">
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:6Pathos25defaultTemporaryDirectorySSvp"></a>
+                      <a name="//apple_ref/swift/Global/defaultTemporaryDirectory" class="dashAnchor"></a>
+                      <a class="token" href="#/s:6Pathos25defaultTemporaryDirectorySSvp">defaultTemporaryDirectory</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The name of the directory used for temporary files. This defines the default value for the <code>directory</code>
 argument to all functions involving a temporary path.</p>
 
 <p>Pathos calls <code>searchForDefaultTemporaryDirectory</code> to calculate this value. The result of this search is
 cached. You can use the same method to reset this value if needed.</p>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">defaultTemporaryDirectory</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
                         </div>
-                      </div>
-                    </section>
-                  </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">defaultTemporaryDirectory</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+        </article>
+      </div>
+      <div class="nav-wrapper">
+        <nav class="nav-bottom">
+          <ul class="nav-groups">
+            <li class="nav-group-name">
+              <a href="Manipulating Paths.html">Manipulating Paths</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Manipulating Paths.html#/s:6Pathos10deletePath_9recursiveySS_SbtKF">deletePath(_:recursive:)</a>
                 </li>
               </ul>
-            </div>
-          </section>
-        </section>
+            </li>
+            <li class="nav-group-name">
+              <a href="Other Global Variables.html">Other Global Variables</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Other Global Variables.html#/s:6Pathos25defaultTemporaryDirectorySSvp">defaultTemporaryDirectory</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Global Variables.html#/s:6Pathos13pathSeparatorSSvp">pathSeparator</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Global Variables.html#/s:6Pathos22pathSeparatorCharacterSJvp">pathSeparatorCharacter</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="Other Enums.html">Other Enumerations</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Enums/PathosError.html">PathosError</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Enums/SystemError.html">SystemError</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="Other Functions.html">Other Functions</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos12absolutePath02ofC0S2S_tKF">absolutePath(ofPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos10accessTime6atPathAA04FileC0VSS_tKF">accessTime(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos3add_6toPathyAA14FilePermissionV_SStKF">add(_:toPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos8basename6ofPathS2S_tF">basename(ofPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos12blockDevices6inPath9recursiveSaySSGSS_SbtKF">blockDevices(inPath:recursive:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos16characterDevices6inPath9recursiveSaySSGSS_SbtKF">characterDevices(inPath:recursive:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos8children6inPath9recursiveSaySSGSS_SbtKF">children(inPath:recursive:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos10commonPath10amongPaths__S2S_S2SdtF">commonPath(amongPaths:_:_:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF">copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF">createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos18createSymbolicLink8fromPath02toF0ySS_SStKF">createSymbolicLink(fromPath:toPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos24createTemporaryDirectory6suffix6prefix02inD0S2SSg_A2FtKF">createTemporaryDirectory(suffix:prefix:inDirectory:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos19createTemporaryFile6suffix6prefix11inDirectoryS2S_S2SSgtKF">createTemporaryFile(suffix:prefix:inDirectory:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos11directories6inPath9recursiveSaySSGSS_SbtKF">directories(inPath:recursive:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos9directory6ofPathS2S_tF">directory(ofPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos6exists6atPath12followSymbolSbSS_SbtF">exists(atPath:followSymbol:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos19expandUserDirectory6inPathS2S_tKF">expandUserDirectory(inPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos13fileExtension6ofPathS2S_tF">fileExtension(ofPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos5files6inPath9recursiveSaySSGSS_SbtKF">files(inPath:recursive:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos26getCurrentWorkingDirectorySSyKF">getCurrentWorkingDirectory()</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos4globySaySSGSSKF">glob(_:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos10isAbsolute4pathSbSS_tF">isAbsolute(path:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos13isBlockDevice6atPathSbSS_tKF">isBlockDevice(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos17isCharacterDevice6atPathSbSS_tKF">isCharacterDevice(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos11isDirectory6atPathSbSS_tKF">isDirectory(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos6isFile6atPathSbSS_tKF">isFile(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos6isPipe6atPathSbSS_tKF">isPipe(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos8isSocket6atPathSbSS_tKF">isSocket(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos14isSymbolicLink6atPathSbSS_tKF">isSymbolicLink(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos4join5pathsSSSaySSG_tF">join(paths:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos4join5paths__S2S_S2SdtF">join(paths:_:_:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos18metadataChangeTime6atPathAA04FileD0VSS_tKF">metadataChangeTime(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos16modificationTime6atPathAA04FileC0VSS_tKF">modificationTime(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos8movePath_02toC0ySS_SStKF">movePath(_:toPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos9normalize4pathS2S_tF">normalize(path:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos11permissions7forPathAA14FilePermissionVSS_tKF">permissions(forPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos5pipes6inPath9recursiveSaySSGSS_SbtKF">pipes(inPath:recursive:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos9readBytes6atPathSays5UInt8VGSS_tKF">readBytes(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos10readString6atPathS2S_tKF">readString(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos16readSymbolicLink6atPathS2S_tKF">readSymbolicLink(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos8realPath02ofC0S2S_tKF">realPath(ofPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos12relativePath02ofC0S2S_tKF">relativePath(ofPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos12relativePath02ofC0012startingFromC0S2S_SStF">relativePath(ofPath:startingFromPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos6remove_7forPathyAA14FilePermissionV_SStKF">remove(_:forPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos8sameFile6atPath05otherE0SbSS_SStKF">sameFile(atPath:otherPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos34searchForDefaultTemporaryDirectorySSyF">searchForDefaultTemporaryDirectory()</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos3set_7forPathyAA14FilePermissionV_SStKF">set(_:forPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos26setCurrentWorkingDirectory6toPathySS_tKF">setCurrentWorkingDirectory(toPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos4size6atPaths5Int64VSS_tKF">size(atPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos7sockets6inPath9recursiveSaySSGSS_SbtKF">sockets(inPath:recursive:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos5split4pathSS_SStSS_tF">split(path:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos14splitExtension6ofPathSS_SStSS_tF">splitExtension(ofPath:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos13symbolicLinks6inPath9recursiveSaySSGSS_SbtKF">symbolicLinks(inPath:recursive:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos16unknownTypeFiles6inPath9recursiveSaySSGSS_SbtKF">unknownTypeFiles(inPath:recursive:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos22withTemporaryDirectory6suffix6prefix02inD013performActionySS_S2SSgySSKctKF">withTemporaryDirectory(suffix:prefix:inDirectory:performAction:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos20withWorkingDirectory9beingPath13performActionySS_yyKctKF">withWorkingDirectory(beingPath:performAction:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos5write_6atPath17createIfNecessary10permissionySS_SSSbAA14FilePermissionVSgtKF">write(_:atPath:createIfNecessary:permission:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Other Functions.html#/s:6Pathos5write_6atPath17createIfNecessary10permissionyx_SSSbAA14FilePermissionVSgtKSlRzSz7ElementRpzlF">write(_:atPath:createIfNecessary:permission:)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="Other Protocols.html">Other Protocols</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Protocols/PathRepresentable.html">PathRepresentable</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="Other Structs.html">Other Structures</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="Structs/FilePermission.html">FilePermission</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Structs/FileTime.html">FileTime</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="Structs/Path.html">Path</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-wrapper">
         <section id="footer">
           <p>&copy; 2019 <a class="link" href="https://github.com/dduan/Pathos" target="_blank" rel="external">Daniel Duan</a>. All rights reserved. (Last updated: 2019-03-17)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
-      </article>
+      </div>
     </div>
   </body>
 </div>
