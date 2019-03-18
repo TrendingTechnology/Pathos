@@ -134,6 +134,9 @@
             <a class="nav-group-name-link" href="Analyzing Paths.html">Analyzing Paths</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Analyzing Paths.html#/s:6Pathos10isAbsolute4pathSbSS_tF">isAbsolute(path:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Analyzing Paths.html#/s:6Pathos12absolutePath02ofC0S2S_tKF">absolutePath(ofPath:)</a>
               </li>
               <li class="nav-group-task">
@@ -258,9 +261,6 @@
                 <a class="nav-group-task-link" href="Existence.html#/s:6Pathos6exists6atPath12followSymbolSbSS_SbtF">exists(atPath:followSymbol:)</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Existence.html#/s:6Pathos10isAbsolute4pathSbSS_tF">isAbsolute(path:)</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Existence.html#/s:6Pathos13isBlockDevice6atPathSbSS_tKF">isBlockDevice(atPath:)</a>
               </li>
               <li class="nav-group-task">
@@ -326,9 +326,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos12absolutePath02ofC0S2S_tKF"></a>
-                    <a name="//apple_ref/swift/Function/absolutePath(ofPath:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos12absolutePath02ofC0S2S_tKF">absolutePath(ofPath:)</a>
+                    <a name="/s:6Pathos10isAbsolute4pathSbSS_tF"></a>
+                    <a name="//apple_ref/swift/Function/isAbsolute(path:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos10isAbsolute4pathSbSS_tF">isAbsolute(path:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -343,70 +343,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">absolutePath</span><span class="p">(</span><span class="n">ofPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isAbsolute</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos8realPath02ofC0S2S_tKF"></a>
-                    <a name="//apple_ref/swift/Function/realPath(ofPath:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos8realPath02ofC0S2S_tKF">realPath(ofPath:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Return the canonical path of the specified filename, eliminating any symbolic links encountered in the
-path (if they are supported by the operating system). The result is alway an absolute path.</p>
-<div class="aside aside-throws">
-    <p class="aside-title">Throws</p>
-    System error encountered while reading link content or converting relative path to absolute
-      path.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">realPath</span><span class="p">(</span><span class="n">ofPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>path</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>the path to look up for.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -565,6 +508,90 @@ path (if they are supported by the operating system). The result is alway an abs
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">splitExtension</span><span class="p">(</span><span class="n">ofPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">String</span><span class="p">,</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos12absolutePath02ofC0S2S_tKF"></a>
+                    <a name="//apple_ref/swift/Function/absolutePath(ofPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos12absolutePath02ofC0S2S_tKF">absolutePath(ofPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">absolutePath</span><span class="p">(</span><span class="n">ofPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos8realPath02ofC0S2S_tKF"></a>
+                    <a name="//apple_ref/swift/Function/realPath(ofPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8realPath02ofC0S2S_tKF">realPath(ofPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the canonical path of the specified filename, eliminating any symbolic links encountered in the
+path (if they are supported by the operating system). The result is alway an absolute path.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    System error encountered while reading link content or converting relative path to absolute
+      path.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">realPath</span><span class="p">(</span><span class="n">ofPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the path to look up for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
