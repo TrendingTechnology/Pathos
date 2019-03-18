@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Manipulating Paths  Reference</title>
+    <title>File IO  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Manipulating Paths" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/File IO" class="dashAnchor"></a>
 
-    <a title="Manipulating Paths  Reference"></a>
+    <a title="File IO  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -38,7 +38,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html">Pathos Reference</a>
       <img class="carat" src="img/carat.png" />
-      Manipulating Paths  Reference
+      File IO  Reference
     </p>
 
     <div class="content-wrapper">
@@ -314,9 +314,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Manipulating Paths</h1>
-            <p>The following functions and their <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code> counterparts help you alter the file system.</p>
-
+            <h1>File IO</h1>
+            
           </div>
         </section>
 
@@ -327,9 +326,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos10deletePath_9recursiveySS_SbtKF"></a>
-                    <a name="//apple_ref/swift/Function/deletePath(_:recursive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos10deletePath_9recursiveySS_SbtKF">deletePath(_:recursive:)</a>
+                    <a name="/s:6Pathos9readBytes6atPathSays5UInt8VGSS_tKF"></a>
+                    <a name="//apple_ref/swift/Function/readBytes(atPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos9readBytes6atPathSays5UInt8VGSS_tKF">readBytes(atPath:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -337,45 +336,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    To work with <code><a href="Structs/Path.html">Path</a></code> or <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, use <code><a href="Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentablePAAE6delete9recursiveS2b_tF">PathRepresentable.delete(recursive:)</a></code>.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deletePath</span><span class="p">(</span><span class="n">_</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">recursive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos8movePath_02toC0ySS_SStKF"></a>
-                    <a name="//apple_ref/swift/Function/movePath(_:toPath:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos8movePath_02toC0ySS_SStKF">movePath(_:toPath:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Move the file or directory from path to a new location. If new path exists, it is first removed. Both path
-must be of the same file type (directories, or non-directories) and must reside on the same file system.
-If the final component of old is a symbolic link, the symbolic link is renamed, not the file or directory
-to which it points.</p>
+                        <p>Read content of a file at <code>path</code> as bytes. If the path is a directory, no bytes will be read.</p>
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    System error. This could be caused by lack of permissions in either path, paths having different
-      file types; attempting to move <code>.</code> or <code>..</code>, etc.
+    System error encountered while opening the file.
 
 </div>
 
@@ -384,70 +348,7 @@ to which it points.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">movePath</span><span class="p">(</span><span class="n">_</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPath</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>source</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The original location.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>destination</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The new location.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF"></a>
-                    <a name="//apple_ref/swift/Function/createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF">createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Create directory at given path.</p>
-<div class="aside aside-throws">
-    <p class="aside-title">Throws</p>
-    A <code><a href="Enums/SystemError.html">SystemError</a></code>.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createDirectory</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">permission</span><span class="p">:</span> <span class="kt"><a href="Structs/FilePermission.html">FilePermission</a></span> <span class="o">=</span> <span class="mi">0</span><span class="n">o0755</span><span class="p">,</span> <span class="nv">createParents</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">throwIfAlreadyExists</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">readBytes</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -463,47 +364,7 @@ to which it points.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The path at witch the directory is to be created.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>permissions</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Access flags (combined with the process&rsquo;s <code>umask</code>) for the directory to be created.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>createParents</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>If <code>true</code>, any missing parents of this path are created as needed; they are created
-           with the default permissions without taking mode into account (mimicking the POSIX
-           <code>mkdir -p</code> command). If <code>false</code>, a missing parent will cause a <code><a href="Enums/SystemError.html">SystemError</a></code>. Defaults
-           to <code>false</code></p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>throwIfAlreadyExists</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>If <code>true</code>, a <code><a href="Enums/SystemError.html">SystemError</a></code> is thrown if the target directory (or any of it&rsquo;s
-                  parent, if it needs creation) already exists.</p>
+                                  <p>the path to the file that will be read. If the path is a directory, no bytes will be read.</p>
                                 </div>
                               </td>
                             </tr>
@@ -513,16 +374,67 @@ to which it points.</p>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF"></a>
-                    <a name="//apple_ref/swift/Function/copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF">copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)</a>
+                    <a name="/s:6Pathos10readString6atPathS2S_tKF"></a>
+                    <a name="//apple_ref/swift/Function/readString(atPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos10readString6atPathS2S_tKF">readString(atPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read the content of file at <code>path</code> as an UTF-8 string. If the path points to a directory, empty string will be returned. If other encoding is desired, use <code>readBytes</code> and encode separetely.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    System error encountered while opening the file.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">readString</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>path at which the content will be read.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>content of the file as an UTF-8 string.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos5write_6atPath17createIfNecessary10permissionyx_SSSbAA14FilePermissionVSgtKSlRzSz7ElementRpzlF"></a>
+                    <a name="//apple_ref/swift/Function/write(_:atPath:createIfNecessary:permission:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos5write_6atPath17createIfNecessary10permissionyx_SSSbAA14FilePermissionVSgtKSlRzSz7ElementRpzlF">write(_:atPath:createIfNecessary:permission:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -537,9 +449,158 @@ to which it points.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">copyFile</span><span class="p">(</span><span class="n">fromPath</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPath</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">followSymbolicLink</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">chunkSize</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">16</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">write</span><span class="o">&lt;</span><span class="kt">Bytes</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">bytes</span><span class="p">:</span> <span class="kt">Bytes</span><span class="p">,</span> <span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">createIfNecessary</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">permission</span><span class="p">:</span> <span class="kt"><a href="Structs/FilePermission.html">FilePermission</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">Bytes</span><span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">Bytes</span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt">BinaryInteger</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos5write_6atPath17createIfNecessary10permissionySS_SSSbAA14FilePermissionVSgtKF"></a>
+                    <a name="//apple_ref/swift/Function/write(_:atPath:createIfNecessary:permission:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos5write_6atPath17createIfNecessary10permissionySS_SSSbAA14FilePermissionVSgtKF">write(_:atPath:createIfNecessary:permission:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">write</span><span class="p">(</span><span class="n">_</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">createIfNecessary</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">permission</span><span class="p">:</span> <span class="kt"><a href="Structs/FilePermission.html">FilePermission</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos16readSymbolicLink6atPathS2S_tKF"></a>
+                    <a name="//apple_ref/swift/Function/readSymbolicLink(atPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos16readSymbolicLink6atPathS2S_tKF">readSymbolicLink(atPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return a string representing the path to which the symbolic link points. The result may be either an absolute or relative pathname.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    system error encountered while attempting to read the content of the link.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">readSymbolicLink</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the location of the symbolic link.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>string reprentation of the link&rsquo;s destination.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos18createSymbolicLink8fromPath02toF0ySS_SStKF"></a>
+                    <a name="//apple_ref/swift/Function/createSymbolicLink(fromPath:toPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos18createSymbolicLink8fromPath02toF0ySS_SStKF">createSymbolicLink(fromPath:toPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a symbolic link for file or directory at <code>source</code> in the location of <code>destination</code>.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    system error. Example of cause includes lack of write permission at destination, lack of additional space, etc.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createSymbolicLink</span><span class="p">(</span><span class="n">fromPath</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPath</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>source</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>path to the original file or directory.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destination</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the location for the symbolic link to be created.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>

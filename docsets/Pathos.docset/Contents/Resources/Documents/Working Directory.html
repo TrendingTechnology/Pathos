@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Manipulating Paths  Reference</title>
+    <title>Working Directory  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Manipulating Paths" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/Working Directory" class="dashAnchor"></a>
 
-    <a title="Manipulating Paths  Reference"></a>
+    <a title="Working Directory  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -38,7 +38,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html">Pathos Reference</a>
       <img class="carat" src="img/carat.png" />
-      Manipulating Paths  Reference
+      Working Directory  Reference
     </p>
 
     <div class="content-wrapper">
@@ -314,9 +314,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Manipulating Paths</h1>
-            <p>The following functions and their <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code> counterparts help you alter the file system.</p>
-
+            <h1>Working Directory</h1>
+            
           </div>
         </section>
 
@@ -327,9 +326,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos10deletePath_9recursiveySS_SbtKF"></a>
-                    <a name="//apple_ref/swift/Function/deletePath(_:recursive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos10deletePath_9recursiveySS_SbtKF">deletePath(_:recursive:)</a>
+                    <a name="/s:6Pathos26getCurrentWorkingDirectorySSyKF"></a>
+                    <a name="//apple_ref/swift/Function/getCurrentWorkingDirectory()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos26getCurrentWorkingDirectorySSyKF">getCurrentWorkingDirectory()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -337,45 +336,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    To work with <code><a href="Structs/Path.html">Path</a></code> or <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, use <code><a href="Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentablePAAE6delete9recursiveS2b_tF">PathRepresentable.delete(recursive:)</a></code>.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deletePath</span><span class="p">(</span><span class="n">_</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">recursive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos8movePath_02toC0ySS_SStKF"></a>
-                    <a name="//apple_ref/swift/Function/movePath(_:toPath:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos8movePath_02toC0ySS_SStKF">movePath(_:toPath:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Move the file or directory from path to a new location. If new path exists, it is first removed. Both path
-must be of the same file type (directories, or non-directories) and must reside on the same file system.
-If the final component of old is a symbolic link, the symbolic link is renamed, not the file or directory
-to which it points.</p>
+                        <p>Get current working directory.</p>
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    System error. This could be caused by lack of permissions in either path, paths having different
-      file types; attempting to move <code>.</code> or <code>..</code>, etc.
+    System error that could trigger when a component of the current path no longer exists or the
+      process lacks permission to read it.
 
 </div>
 
@@ -384,40 +349,13 @@ to which it points.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">movePath</span><span class="p">(</span><span class="n">_</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPath</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCurrentWorkingDirectory</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
                       <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>source</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The original location.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>destination</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The new location.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <h4>Return Value</h4>
+                        <p>Path for current working directory.</p>
                       </div>
                     </section>
                   </div>
@@ -425,9 +363,9 @@ to which it points.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF"></a>
-                    <a name="//apple_ref/swift/Function/createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF">createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)</a>
+                    <a name="/s:6Pathos26setCurrentWorkingDirectory6toPathySS_tKF"></a>
+                    <a name="//apple_ref/swift/Function/setCurrentWorkingDirectory(toPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos26setCurrentWorkingDirectory6toPathySS_tKF">setCurrentWorkingDirectory(toPath:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -435,10 +373,12 @@ to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create directory at given path.</p>
+                        <p>Set current working directory.</p>
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    A <code><a href="Enums/SystemError.html">SystemError</a></code>.
+    System error that could trigger when, for example, search permission is denied for any component
+      of the path name; There&rsquo;s a symbolic link loop among some components; A component is not an
+      directory, etc.
 
 </div>
 
@@ -447,7 +387,46 @@ to which it points.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createDirectory</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">permission</span><span class="p">:</span> <span class="kt"><a href="Structs/FilePermission.html">FilePermission</a></span> <span class="o">=</span> <span class="mi">0</span><span class="n">o0755</span><span class="p">,</span> <span class="nv">createParents</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">throwIfAlreadyExists</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setCurrentWorkingDirectory</span><span class="p">(</span><span class="n">toPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Path for current working directory.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos20withWorkingDirectory9beingPath13performActionySS_yyKctKF"></a>
+                    <a name="//apple_ref/swift/Function/withWorkingDirectory(beingPath:performAction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos20withWorkingDirectory9beingPath13performActionySS_yyKctKF">withWorkingDirectory(beingPath:performAction:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Execute a closure with the current working direcotry being the specified path. Restore the current working
+directory when the execution is finished.</p>
+
+<p>The closure is guaranteed to be invoked synchronously.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Errors encountered setting or reading working directories.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">withWorkingDirectory</span><span class="p">(</span><span class="n">beingPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">performAction</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -463,83 +442,24 @@ to which it points.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The path at witch the directory is to be created.</p>
+                                  <p>The path that would be the current working directory.</p>
                                 </div>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <code>
-                                <em>permissions</em>
+                                <em>closure</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Access flags (combined with the process&rsquo;s <code>umask</code>) for the directory to be created.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>createParents</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>If <code>true</code>, any missing parents of this path are created as needed; they are created
-           with the default permissions without taking mode into account (mimicking the POSIX
-           <code>mkdir -p</code> command). If <code>false</code>, a missing parent will cause a <code><a href="Enums/SystemError.html">SystemError</a></code>. Defaults
-           to <code>false</code></p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>throwIfAlreadyExists</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>If <code>true</code>, a <code><a href="Enums/SystemError.html">SystemError</a></code> is thrown if the target directory (or any of it&rsquo;s
-                  parent, if it needs creation) already exists.</p>
+                                  <p>The closure that will be called with <code>path</code> being the working directory.</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF"></a>
-                    <a name="//apple_ref/swift/Function/copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF">copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">copyFile</span><span class="p">(</span><span class="n">fromPath</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPath</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">followSymbolicLink</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">chunkSize</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">16</span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Manipulating Paths  Reference</title>
+    <title>System Attributes  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Manipulating Paths" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/System Attributes" class="dashAnchor"></a>
 
-    <a title="Manipulating Paths  Reference"></a>
+    <a title="System Attributes  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -38,7 +38,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html">Pathos Reference</a>
       <img class="carat" src="img/carat.png" />
-      Manipulating Paths  Reference
+      System Attributes  Reference
     </p>
 
     <div class="content-wrapper">
@@ -314,9 +314,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Manipulating Paths</h1>
-            <p>The following functions and their <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code> counterparts help you alter the file system.</p>
-
+            <h1>System Attributes</h1>
+            
           </div>
         </section>
 
@@ -327,9 +326,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos10deletePath_9recursiveySS_SbtKF"></a>
-                    <a name="//apple_ref/swift/Function/deletePath(_:recursive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos10deletePath_9recursiveySS_SbtKF">deletePath(_:recursive:)</a>
+                    <a name="/s:6Pathos4size6atPaths5Int64VSS_tKF"></a>
+                    <a name="//apple_ref/swift/Function/size(atPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos4size6atPaths5Int64VSS_tKF">size(atPath:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -337,45 +336,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    To work with <code><a href="Structs/Path.html">Path</a></code> or <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, use <code><a href="Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentablePAAE6delete9recursiveS2b_tF">PathRepresentable.delete(recursive:)</a></code>.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deletePath</span><span class="p">(</span><span class="n">_</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">recursive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos8movePath_02toC0ySS_SStKF"></a>
-                    <a name="//apple_ref/swift/Function/movePath(_:toPath:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos8movePath_02toC0ySS_SStKF">movePath(_:toPath:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Move the file or directory from path to a new location. If new path exists, it is first removed. Both path
-must be of the same file type (directories, or non-directories) and must reside on the same file system.
-If the final component of old is a symbolic link, the symbolic link is renamed, not the file or directory
-to which it points.</p>
+                        <p>Return the size in bytes of path.</p>
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    System error. This could be caused by lack of permissions in either path, paths having different
-      file types; attempting to move <code>.</code> or <code>..</code>, etc.
+    A <code><a href="Enums/SystemError.html">SystemError</a></code> if the file does not exist or is inaccessible.
 
 </div>
 
@@ -384,70 +348,7 @@ to which it points.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">movePath</span><span class="p">(</span><span class="n">_</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPath</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>source</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The original location.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>destination</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The new location.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF"></a>
-                    <a name="//apple_ref/swift/Function/createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF">createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Create directory at given path.</p>
-<div class="aside aside-throws">
-    <p class="aside-title">Throws</p>
-    A <code><a href="Enums/SystemError.html">SystemError</a></code>.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createDirectory</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">permission</span><span class="p">:</span> <span class="kt"><a href="Structs/FilePermission.html">FilePermission</a></span> <span class="o">=</span> <span class="mi">0</span><span class="n">o0755</span><span class="p">,</span> <span class="nv">createParents</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">throwIfAlreadyExists</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">size</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int64</span></code></pre>
 
                         </div>
                       </div>
@@ -463,10 +364,308 @@ to which it points.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The path at witch the directory is to be created.</p>
+                                  <p>the path to be tested.</p>
                                 </div>
                               </td>
                             </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>size of the file at path.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos10accessTime6atPathAA04FileC0VSS_tKF"></a>
+                    <a name="//apple_ref/swift/Function/accessTime(atPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos10accessTime6atPathAA04FileC0VSS_tKF">accessTime(atPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the time of last access of path.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="Enums/SystemError.html">SystemError</a></code> if the file does not exist or is inaccessible.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accessTime</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/FileTime.html">FileTime</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>path to be queried.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>time of last access in <code><a href="Structs/FileTime.html">FileTime</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos18metadataChangeTime6atPathAA04FileD0VSS_tKF"></a>
+                    <a name="//apple_ref/swift/Function/metadataChangeTime(atPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos18metadataChangeTime6atPathAA04FileD0VSS_tKF">metadataChangeTime(atPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the system’s ctime which, on some systems (like Unix) is the time of the last metadata change</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="Enums/SystemError.html">SystemError</a></code> if the file does not exist or is inaccessible.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">metadataChangeTime</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/FileTime.html">FileTime</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>path to be queried.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>time of last metadata change in <code><a href="Structs/FileTime.html">FileTime</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos16modificationTime6atPathAA04FileC0VSS_tKF"></a>
+                    <a name="//apple_ref/swift/Function/modificationTime(atPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos16modificationTime6atPathAA04FileC0VSS_tKF">modificationTime(atPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the time of last modification of path.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="Enums/SystemError.html">SystemError</a></code> if the file does not exist or is inaccessible.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">modificationTime</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/FileTime.html">FileTime</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>path to be queried.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>modification time in <code><a href="Structs/FileTime.html">FileTime</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos14FilePermissionV"></a>
+                    <a name="//apple_ref/swift/Struct/FilePermission" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos14FilePermissionV">FilePermission</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the POSIX file permission bits. These bits determines read/write/execution access to a file as
+well as some miscellaneous information.</p>
+
+                        <a href="Structs/FilePermission.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FilePermission</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos11permissions7forPathAA14FilePermissionVSS_tKF"></a>
+                    <a name="//apple_ref/swift/Function/permissions(forPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos11permissions7forPathAA14FilePermissionVSS_tKF">permissions(forPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get file permissions for path. This function will <em>not</em> follow symbolic links, it&rsquo;ll return permissions
+for the link itself instead.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    System error encountered while attempting to read permissions at the path.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">permissions</span><span class="p">(</span><span class="n">forPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="Structs/FilePermission.html">FilePermission</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path for which the permissions are get.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos3add_6toPathyAA14FilePermissionV_SStKF"></a>
+                    <a name="//apple_ref/swift/Function/add(_:toPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos3add_6toPathyAA14FilePermissionV_SStKF">add(_:toPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set additional permissions to existing permission at file or directories at path. This function will <em>not</em>
+follow symbolic links, it&rsquo;ll change permissions for the link itself instead.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    System error encountered while attempting to read or change permissions at the path.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">_</span> <span class="nv">permissions</span><span class="p">:</span> <span class="kt"><a href="Structs/FilePermission.html">FilePermission</a></span><span class="p">,</span> <span class="n">toPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
                             <tr>
                               <td>
                                 <code>
@@ -475,35 +674,147 @@ to which it points.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>Access flags (combined with the process&rsquo;s <code>umask</code>) for the directory to be created.</p>
+                                  <p>Additional permissions to be set at the path.</p>
                                 </div>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <code>
-                                <em>createParents</em>
+                                <em>path</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>If <code>true</code>, any missing parents of this path are created as needed; they are created
-           with the default permissions without taking mode into account (mimicking the POSIX
-           <code>mkdir -p</code> command). If <code>false</code>, a missing parent will cause a <code><a href="Enums/SystemError.html">SystemError</a></code>. Defaults
-           to <code>false</code></p>
+                                  <p>The path whose permission is being changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos6remove_7forPathyAA14FilePermissionV_SStKF"></a>
+                    <a name="//apple_ref/swift/Function/remove(_:forPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos6remove_7forPathyAA14FilePermissionV_SStKF">remove(_:forPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove permissions from existing permission at a path. This function will <em>not</em> follow symbolic links,
+it&rsquo;ll change permissions for the link itself instead.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    System error encountered while attempting to read or change permissions at the path.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">_</span> <span class="nv">permissions</span><span class="p">:</span> <span class="kt"><a href="Structs/FilePermission.html">FilePermission</a></span><span class="p">,</span> <span class="n">forPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>permissions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Permissions to be removed at the path.</p>
                                 </div>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <code>
-                                <em>throwIfAlreadyExists</em>
+                                <em>path</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>If <code>true</code>, a <code><a href="Enums/SystemError.html">SystemError</a></code> is thrown if the target directory (or any of it&rsquo;s
-                  parent, if it needs creation) already exists.</p>
+                                  <p>The path whose permission is being changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos3set_7forPathyAA14FilePermissionV_SStKF"></a>
+                    <a name="//apple_ref/swift/Function/set(_:forPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos3set_7forPathyAA14FilePermissionV_SStKF">set(_:forPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set permissions at a path. This function will <em>not</em> follow symbolic links, it&rsquo;ll change permissions for
+the link itself instead.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    System error encountered while attempting to read or change permissions at the path.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="n">_</span> <span class="nv">permissions</span><span class="p">:</span> <span class="kt"><a href="Structs/FilePermission.html">FilePermission</a></span><span class="p">,</span> <span class="n">forPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>permissions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Permissions to be set at the path.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path whose permission is being changed.</p>
                                 </div>
                               </td>
                             </tr>
@@ -520,9 +831,9 @@ to which it points.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF"></a>
-                    <a name="//apple_ref/swift/Function/copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF">copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)</a>
+                    <a name="/s:6Pathos8FileTimeV"></a>
+                    <a name="//apple_ref/swift/Struct/FileTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTimeV">FileTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -530,14 +841,15 @@ to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A time interval broken down into seconds and nanoseconds.</p>
 
+                        <a href="Structs/FileTime.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">copyFile</span><span class="p">(</span><span class="n">fromPath</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPath</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">followSymbolicLink</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">chunkSize</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">16</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FileTime</span></code></pre>
 
                         </div>
                       </div>

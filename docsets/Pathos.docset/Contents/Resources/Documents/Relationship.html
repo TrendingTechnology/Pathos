@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Manipulating Paths  Reference</title>
+    <title>Relationship  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Manipulating Paths" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/Relationship" class="dashAnchor"></a>
 
-    <a title="Manipulating Paths  Reference"></a>
+    <a title="Relationship  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -38,7 +38,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html">Pathos Reference</a>
       <img class="carat" src="img/carat.png" />
-      Manipulating Paths  Reference
+      Relationship  Reference
     </p>
 
     <div class="content-wrapper">
@@ -314,9 +314,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Manipulating Paths</h1>
-            <p>The following functions and their <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code> counterparts help you alter the file system.</p>
-
+            <h1>Relationship</h1>
+            
           </div>
         </section>
 
@@ -327,9 +326,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos10deletePath_9recursiveySS_SbtKF"></a>
-                    <a name="//apple_ref/swift/Function/deletePath(_:recursive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos10deletePath_9recursiveySS_SbtKF">deletePath(_:recursive:)</a>
+                    <a name="/s:6Pathos12relativePath02ofC0S2S_tKF"></a>
+                    <a name="//apple_ref/swift/Function/relativePath(ofPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos12relativePath02ofC0S2S_tKF">relativePath(ofPath:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -337,45 +336,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    To work with <code><a href="Structs/Path.html">Path</a></code> or <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, use <code><a href="Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentablePAAE6delete9recursiveS2b_tF">PathRepresentable.delete(recursive:)</a></code>.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deletePath</span><span class="p">(</span><span class="n">_</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">recursive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos8movePath_02toC0ySS_SStKF"></a>
-                    <a name="//apple_ref/swift/Function/movePath(_:toPath:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos8movePath_02toC0ySS_SStKF">movePath(_:toPath:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Move the file or directory from path to a new location. If new path exists, it is first removed. Both path
-must be of the same file type (directories, or non-directories) and must reside on the same file system.
-If the final component of old is a symbolic link, the symbolic link is renamed, not the file or directory
-to which it points.</p>
+                        <p>Return the relative location of <code>path</code> from the current working directory.
+Example: starting from <code>/Users/dan</code>, the relative path of <code>/</code> would be <code>../..</code>.</p>
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    System error. This could be caused by lack of permissions in either path, paths having different
-      file types; attempting to move <code>.</code> or <code>..</code>, etc.
+    system error resulted from trying to access current working directory.
 
 </div>
 
@@ -384,70 +349,7 @@ to which it points.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">movePath</span><span class="p">(</span><span class="n">_</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPath</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>source</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The original location.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>destination</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The new location.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF"></a>
-                    <a name="//apple_ref/swift/Function/createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF">createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Create directory at given path.</p>
-<div class="aside aside-throws">
-    <p class="aside-title">Throws</p>
-    A <code><a href="Enums/SystemError.html">SystemError</a></code>.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createDirectory</span><span class="p">(</span><span class="n">atPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">permission</span><span class="p">:</span> <span class="kt"><a href="Structs/FilePermission.html">FilePermission</a></span> <span class="o">=</span> <span class="mi">0</span><span class="n">o0755</span><span class="p">,</span> <span class="nv">createParents</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">throwIfAlreadyExists</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">relativePath</span><span class="p">(</span><span class="n">ofPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -463,66 +365,26 @@ to which it points.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The path at witch the directory is to be created.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>permissions</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Access flags (combined with the process&rsquo;s <code>umask</code>) for the directory to be created.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>createParents</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>If <code>true</code>, any missing parents of this path are created as needed; they are created
-           with the default permissions without taking mode into account (mimicking the POSIX
-           <code>mkdir -p</code> command). If <code>false</code>, a missing parent will cause a <code><a href="Enums/SystemError.html">SystemError</a></code>. Defaults
-           to <code>false</code></p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>throwIfAlreadyExists</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>If <code>true</code>, a <code><a href="Enums/SystemError.html">SystemError</a></code> is thrown if the target directory (or any of it&rsquo;s
-                  parent, if it needs creation) already exists.</p>
+                                  <p>the path the result is relative to.</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
                       </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a relative file path to current working directory.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF"></a>
-                    <a name="//apple_ref/swift/Function/copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF">copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)</a>
+                    <a name="/s:6Pathos19expandUserDirectory6inPathS2S_tKF"></a>
+                    <a name="//apple_ref/swift/Function/expandUserDirectory(inPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos19expandUserDirectory6inPathS2S_tKF">expandUserDirectory(inPath:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -537,7 +399,206 @@ to which it points.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">copyFile</span><span class="p">(</span><span class="n">fromPath</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPath</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">followSymbolicLink</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">chunkSize</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">16</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">expandUserDirectory</span><span class="p">(</span><span class="n">inPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos12relativePath02ofC0012startingFromC0S2S_SStF"></a>
+                    <a name="//apple_ref/swift/Function/relativePath(ofPath:startingFromPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos12relativePath02ofC0012startingFromC0S2S_SStF">relativePath(ofPath:startingFromPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return relative location of <code>path</code> from from an another location.
+This is a pure computation: the filesystem is not accessed to confirm the existence or nature of <code>path</code> or
+<code>startingPath</code>.
+Example: starting from <code>/Users/dan</code>, the relative path of <code>/</code> would be <code>../..</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">relativePath</span><span class="p">(</span><span class="n">ofPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">startingFromPath</span> <span class="nv">startingPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the path the result is relative to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startingPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>starting path of the relativity.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a relative file path to <code>path</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos10commonPath10amongPaths__S2S_S2SdtF"></a>
+                    <a name="//apple_ref/swift/Function/commonPath(amongPaths:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos10commonPath10amongPaths__S2S_S2SdtF">commonPath(amongPaths:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the longest common sub-path of each given argument. Segment of sub-path is the smallest unit of
+commonality, meaning this is different from common string prefix: <code>/usr/lib</code> and <code>/usr/lib64</code>&lsquo;s common
+path is <code>/usr</code> as opposed to <code>/usr/lib</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">commonPath</span><span class="p">(</span><span class="n">amongPaths</span> <span class="nv">firstPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">secondPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">otherPaths</span><span class="p">:</span> <span class="kt">String</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>firstPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>First path. This parameter ensures there are at least 2 paths to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secondPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Second path. This parameter ensures there are at least 2 paths to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>otherPaths</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other, optional paths.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The longest common sub-path of each given argument.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos4join5pathsSSSaySSG_tF"></a>
+                    <a name="//apple_ref/swift/Function/join(paths:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos4join5pathsSSSaySSG_tF">join(paths:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span><span class="nv">paths</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Pathos4join5paths__S2S_S2SdtF"></a>
+                    <a name="//apple_ref/swift/Function/join(paths:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos4join5paths__S2S_S2SdtF">join(paths:_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span><span class="n">paths</span> <span class="nv">firstPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">secondPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">otherPaths</span><span class="p">:</span> <span class="kt">String</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
