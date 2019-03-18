@@ -1,0 +1,264 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/Path.swift",
+      "line": 2,
+      "symbol": "Path",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/constants.swift",
+      "line": 9,
+      "symbol": "pathSeparatorCharacter",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/constants.swift",
+      "line": 10,
+      "symbol": "pathSeparator",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/copy.swift",
+      "line": 8,
+      "symbol": "copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/copy.swift",
+      "line": 66,
+      "symbol": "PathRepresentable.copy(to:followSymbolicLink:chunkSize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 2,
+      "symbol": "normalize(path:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 31,
+      "symbol": "isAbsolute(path:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 35,
+      "symbol": "join(paths:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 51,
+      "symbol": "join(paths:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 56,
+      "symbol": "split(path:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 75,
+      "symbol": "splitExtension(ofPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 103,
+      "symbol": "fileExtension(ofPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 108,
+      "symbol": "basename(ofPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 117,
+      "symbol": "directory(ofPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 197,
+      "symbol": "PathRepresentable.normalize()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 202,
+      "symbol": "PathRepresentable.isAbsolute",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 207,
+      "symbol": "PathRepresentable.join(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 212,
+      "symbol": "PathRepresentable.join(with:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 218,
+      "symbol": "PathRepresentable.split()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 224,
+      "symbol": "PathRepresentable.splitExtension()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 230,
+      "symbol": "PathRepresentable.directory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 235,
+      "symbol": "PathRepresentable.basename",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysis.swift",
+      "line": 240,
+      "symbol": "PathRepresentable.extension",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysisWithIO.swift",
+      "line": 8,
+      "symbol": "expandUserDirectory(inPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysisWithIO.swift",
+      "line": 54,
+      "symbol": "absolutePath(ofPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysisWithIO.swift",
+      "line": 154,
+      "symbol": "PathRepresentable.expandUserDirectory()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/pathAnalysisWithIO.swift",
+      "line": 159,
+      "symbol": "PathRepresentable.absolutePath()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/readWrite.swift",
+      "line": 59,
+      "symbol": "write(_:atPath:createIfNecessary:permission:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/readWrite.swift",
+      "line": 65,
+      "symbol": "write(_:atPath:createIfNecessary:permission:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/readWrite.swift",
+      "line": 90,
+      "symbol": "PathRepresentable.write(_:createIfNecessary:permission:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/readWrite.swift",
+      "line": 101,
+      "symbol": "PathRepresentable.write(_:createIfNecessary:permission:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/temporary.swift",
+      "line": 90,
+      "symbol": "createTemporaryFile(suffix:prefix:inDirectory:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/temporary.swift",
+      "line": 97,
+      "symbol": "createTemporaryDirectory(suffix:prefix:inDirectory:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/temporary.swift",
+      "line": 104,
+      "symbol": "withTemporaryDirectory(suffix:prefix:inDirectory:performAction:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/temporary.swift",
+      "line": 144,
+      "symbol": "PathRepresentable.createTemporaryFile(suffix:prefix:inDirectory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/temporary.swift",
+      "line": 153,
+      "symbol": "PathRepresentable.createTemporaryDirectory(suffix:prefix:inDirectory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Code/Pathos/Sources/Pathos/temporary.swift",
+      "line": 162,
+      "symbol": "PathRepresentable.withTemporaryDirectory(suffix:prefix:inDirectory:performAction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/dan/Code/Pathos"
+}
