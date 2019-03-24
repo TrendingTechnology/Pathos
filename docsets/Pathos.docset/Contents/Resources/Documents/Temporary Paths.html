@@ -23,7 +23,7 @@
         <a class="header-link" href="index.html">
           Pathos Docs
         </a>
-         (79% documented)
+         (98% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -339,7 +339,11 @@ guarentees this for you.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    To work with <code><a href="Structs/Path.html">Path</a></code> or <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, use <code><a href="Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentablePAAE22withTemporaryDirectory6suffix6prefix02inF013performActionySS_SSxSgyxKctFZ">PathRepresentable.withTemporaryDirectory(suffix:prefix:inDirectory:performAction:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -366,7 +370,11 @@ guarentees this for you.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    To work with <code><a href="Structs/Path.html">Path</a></code> or <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, use <code><a href="Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentablePAAE24createTemporaryDirectory6suffix6prefix02inF0xSgSS_SSAHtFZ">PathRepresentable.createTemporaryDirectory(suffix:prefix:inDirectory:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -393,7 +401,11 @@ guarentees this for you.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    To work with <code><a href="Structs/Path.html">Path</a></code> or <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, use <code><a href="Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentablePAAE19createTemporaryFile6suffix6prefix11inDirectoryxSgSS_S2SSgtFZ">PathRepresentable.createTemporaryFile(suffix:prefix:inDirectory:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -425,6 +437,11 @@ argument to all functions involving a temporary path.</p>
 
 <p>Pathos calls <code>searchForDefaultTemporaryDirectory</code> to calculate this value. The result of this search is
 cached. You can use the same method to reset this value if needed.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    To work with <code><a href="Structs/Path.html">Path</a></code> or <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, use <code><a href="Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentablePAAE25defaultTemporaryDirectoryxvpZ">PathRepresentable.defaultTemporaryDirectory</a></code>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -453,14 +470,16 @@ cached. You can use the same method to reset this value if needed.</p>
                       <div class="abstract">
                         <p>Searches a standard list of directories to find one which the calling user can create files in.
 The list is:</p>
-
-<ul>
 <li>The directory named by the TMPDIR environment variable.</li>
 <li>The directory named by the TEMP environment variable.</li>
 <li>The directory named by the TMP environment variable.</li>
 <li>The directories <code>/tmp</code>, <code>/var/tmp</code>, and <code>/usr/tmp</code>, in that order.</li>
 <li><p>As a last resort, the current working directory.</p></li>
-</ul>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p>To work with <code><a href="Structs/Path.html">Path</a></code> or <code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, use <code><a href="Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentablePAAE34searchForDefaultTemporaryDirectorySSyFZ">PathRepresentable.searchForDefaultTemporaryDirectory()</a></code></p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -486,7 +505,7 @@ The list is:</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://github.com/dduan/Pathos" target="_blank" rel="external">Daniel Duan</a>. All rights reserved. (Last updated: 2019-03-17)</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/dduan/Pathos" target="_blank" rel="external">Daniel Duan</a>. All rights reserved. (Last updated: 2019-03-23)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

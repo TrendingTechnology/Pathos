@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Pathos Docs
         </a>
-         (79% documented)
+         (98% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -425,6 +425,11 @@
                       <div class="abstract">
                         <p>Whether file at path is a named pipe (FIFO). Returns <code>false</code> if the path does not exist or is
 not accessible.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Existence.html#/s:6Pathos6isPipe6atPathSbSS_tKF">isPipe(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -458,6 +463,11 @@ not accessible.</p>
 not accessible.</p>
 
 <p>Character device is also known as <q>character special file</q> or <q>raw device</q>.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Existence.html#/s:6Pathos17isCharacterDevice6atPathSbSS_tKF">isCharacterDevice(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -489,6 +499,11 @@ not accessible.</p>
                       <div class="abstract">
                         <p>Whether file at path is a directory. Returns <code>false</code> if the path does not exist or is
 not accessible.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Existence.html#/s:6Pathos11isDirectory6atPathSbSS_tKF">isDirectory(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -522,6 +537,11 @@ not accessible.</p>
 not accessible.</p>
 
 <p>Block device is also known as <q>block special file</q>.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Existence.html#/s:6Pathos13isBlockDevice6atPathSbSS_tKF">isBlockDevice(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -553,6 +573,11 @@ not accessible.</p>
                       <div class="abstract">
                         <p>Whether file at path is a regular file. Returns <code>false</code> if the path does not exist or is
 not accessible.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Existence.html#/s:6Pathos6isFile6atPathSbSS_tKF">isFile(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -584,6 +609,11 @@ not accessible.</p>
                       <div class="abstract">
                         <p>Whether file at path is a symbolic link. Returns <code>false</code> if the path does not exist or is
 not accessible.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Existence.html#/s:6Pathos14isSymbolicLink6atPathSbSS_tKF">isSymbolicLink(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -615,6 +645,11 @@ not accessible.</p>
                       <div class="abstract">
                         <p>Whether file at path is a symbolic link. Returns <code>false</code> if the path does not exist or is
 not accessible.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Existence.html#/s:6Pathos8isSocket6atPathSbSS_tKF">isSocket(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -647,6 +682,11 @@ not accessible.</p>
                         <p>Return <code>true</code> if path refers to an existing path or an open file descriptor. Returns <code>false</code> for
 broken symbolic links. On some platforms, this function may return <code>false</code> if permission is not
 granted to execute <code>stat</code> on the requested file, even if the path physically exists.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Existence.html#/s:6Pathos6exists6atPath12followSymbolSbSS_SbtF">exists(atPath:followSymbol:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -702,6 +742,11 @@ granted to execute <code>stat</code> on the requested file, even if the path phy
                       <div class="abstract">
                         <p>Return the size in bytes of path. Returns <code>false</code> if the path does not exist or is
 not accessible.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../System Attributes.html#/s:6Pathos4size6atPaths5Int64VSS_tKF">size(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -733,6 +778,11 @@ not accessible.</p>
                       <div class="abstract">
                         <p>Return the time of last modification. Returns <code>nil</code> if the path does not exist or is
 not accessible.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../System Attributes.html#/s:6Pathos16modificationTime6atPathAA04FileC0VSS_tKF">modificationTime(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -764,6 +814,11 @@ not accessible.</p>
                       <div class="abstract">
                         <p>Return the time of last access. Returns <code>nil</code> if the path does not exist or is
 not accessible.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../System Attributes.html#/s:6Pathos10accessTime6atPathAA04FileC0VSS_tKF">accessTime(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -795,6 +850,11 @@ not accessible.</p>
                       <div class="abstract">
                         <p>Return the system’s ctime which, on some systems (like Unix) is the time of the last metadata change,
 Returns <code>nil</code> if the path does not exist or is not accessible.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../System Attributes.html#/s:6Pathos18metadataChangeTime6atPathAA04FileD0VSS_tKF">metadataChangeTime(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -826,6 +886,11 @@ Returns <code>nil</code> if the path does not exist or is not accessible.</p>
                       <div class="abstract">
                         <p>Return whether <code>path</code> points to the same file as <code>other</code>. Returns <code>false</code> if either path cannot
 be accessed for some reason.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Existence.html#/s:6Pathos8sameFile6atPath05otherE0SbSS_SStKF">sameFile(atPath:otherPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -886,6 +951,11 @@ be accessed for some reason.</p>
 
 <p>Result will be empty if this path cannot be opened or there&rsquo;s not enough memory to hold all data for
 the results.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Finding Files.html#/s:6Pathos8children6inPath9recursiveSaySSGSS_SbtKF">children(inPath:recursive:)</a></code>.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -944,6 +1014,11 @@ directories, block devices, files, symbolic links and sockets.</p>
 
 <p>Result will be empty if this path cannot be opened or there&rsquo;s not enough memory to hold all data for
 the results.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Finding Files.html#/s:6Pathos16unknownTypeFiles6inPath9recursiveSaySSGSS_SbtKF">unknownTypeFiles(inPath:recursive:)</a></code>.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1001,6 +1076,11 @@ the results.</p>
 
 <p>Result will be empty if this path cannot be opened or there&rsquo;s not enough memory to hold all data for
 the results.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Finding Files.html#/s:6Pathos5pipes6inPath9recursiveSaySSGSS_SbtKF">pipes(inPath:recursive:)</a></code>.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1058,6 +1138,11 @@ the results.</p>
 
 <p>Result will be empty if this path cannot be opened or there&rsquo;s not enough memory to hold all data for
 the results.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Finding Files.html#/s:6Pathos16characterDevices6inPath9recursiveSaySSGSS_SbtKF">characterDevices(inPath:recursive:)</a></code>.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1115,6 +1200,11 @@ the results.</p>
 
 <p>Result will be empty if this path cannot be opened or there&rsquo;s not enough memory to hold all data for
 the results.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Finding Files.html#/s:6Pathos11directories6inPath9recursiveSaySSGSS_SbtKF">directories(inPath:recursive:)</a></code>.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1172,6 +1262,11 @@ the results.</p>
 
 <p>Result will be empty if this path cannot be opened or there&rsquo;s not enough memory to hold all data for
 the results.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Finding Files.html#/s:6Pathos12blockDevices6inPath9recursiveSaySSGSS_SbtKF">blockDevices(inPath:recursive:)</a></code>.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1229,6 +1324,16 @@ the results.</p>
 
 <p>Result will be empty if this path cannot be opened or there&rsquo;s not enough memory to hold all data for
 the results.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Finding Files.html#/s:6Pathos5files6inPath9recursiveSaySSGSS_SbtKF">files(inPath:recursive:)</a></code>.</p>
+
+</div>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Finding Files.html#/s:6Pathos5files6inPath9recursiveSaySSGSS_SbtKF">files(inPath:recursive:)</a></code>.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1286,6 +1391,11 @@ the results.</p>
 
 <p>Result will be empty if this path cannot be opened or there&rsquo;s not enough memory to hold all data for
 the results.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Finding Files.html#/s:6Pathos13symbolicLinks6inPath9recursiveSaySSGSS_SbtKF">symbolicLinks(inPath:recursive:)</a></code>.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1343,6 +1453,11 @@ the results.</p>
 
 <p>Result will be empty if this path cannot be opened or there&rsquo;s not enough memory to hold all data for
 the results.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Finding Files.html#/s:6Pathos7sockets6inPath9recursiveSaySSGSS_SbtKF">sockets(inPath:recursive:)</a></code>.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1400,7 +1515,11 @@ the results.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Manipulating Paths.html#/s:6Pathos8copyFile8fromPath02toE018followSymbolicLink9chunkSizeySS_SSSbSitKF">copyFile(fromPath:toPath:followSymbolicLink:chunkSize:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1440,6 +1559,11 @@ the results.</p>
 <code>Path(string: &quot;.&quot;)</code> will be returned instead.
 If an error occures while setting the directory (see <code><a href="../Working Directory.html#/s:6Pathos26setCurrentWorkingDirectory6toPathySS_tKF">setCurrentWorkingDirectory(toPath:)</a></code>), the
 working directory will be unchanged.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Working Directory.html#/s:6Pathos26getCurrentWorkingDirectorySSyKF">getCurrentWorkingDirectory()</a></code> and <code><a href="../Working Directory.html#/s:6Pathos26setCurrentWorkingDirectory6toPathySS_tKF">setCurrentWorkingDirectory(toPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1473,6 +1597,11 @@ working directory will be unchanged.</p>
 afterwards.</p>
 
 <p>The closure is guaranteed to be invoked synchronously.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentablePAAE22withTemporaryDirectory6suffix6prefix02inF013performActionySS_SSxSgyxKctFZ">withTemporaryDirectory(suffix:prefix:inDirectory:performAction:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1545,6 +1674,11 @@ match.</li>
 
 <p>² due to libc implementation, there are subtle behaviral differences among platforms. Specifically, broken
 symbolic links will not be found on Linux, but it will be included on Darwin.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code>glob(_:)</code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1602,6 +1736,11 @@ symbolic links will not be found on Linux, but it will be included on Darwin.</p
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Create a directory at <code><a href="../Protocols/PathRepresentable.html#/s:6Pathos17PathRepresentableP10pathStringSSvp">pathString</a></code>.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Manipulating Paths.html#/s:6Pathos15createDirectory6atPath10permission0B7Parents20throwIfAlreadyExistsySS_AA14FilePermissionVS2btKF">createDirectory(atPath:permission:createParents:throwIfAlreadyExists:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1727,6 +1866,11 @@ or directory to which it points.</p>
       different file types; attempting to move <code>.</code> or <code>..</code>, etc.
 
 </div>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Manipulating Paths.html#/s:6Pathos8movePath_02toC0ySS_SStKF">movePath(_:toPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1779,7 +1923,11 @@ or directory to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Analyzing Paths.html#/s:6Pathos9normalize4pathS2S_tF">normalize(path:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1809,7 +1957,11 @@ or directory to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Analyzing Paths.html#/s:6Pathos10isAbsolute4pathSbSS_tF">isAbsolute(path:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1839,7 +1991,11 @@ or directory to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Relationship.html#/s:6Pathos4join5pathsSSSaySSG_tF">join(paths:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1869,7 +2025,11 @@ or directory to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Relationship.html#/s:6Pathos4join5paths__S2S_S2SdtF">join(paths:_:_:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1899,7 +2059,11 @@ or directory to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Analyzing Paths.html#/s:6Pathos5split4pathSS_SStSS_tF">split(path:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1929,7 +2093,11 @@ or directory to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Analyzing Paths.html#/s:6Pathos14splitExtension6ofPathSS_SStSS_tF">splitExtension(ofPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1959,7 +2127,11 @@ or directory to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Analyzing Paths.html#/s:6Pathos9directory6ofPathS2S_tF">directory(ofPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1989,7 +2161,11 @@ or directory to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Analyzing Paths.html#/s:6Pathos8basename6ofPathS2S_tF">basename(ofPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2019,7 +2195,11 @@ or directory to which it points.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Analyzing Paths.html#/s:6Pathos13fileExtension6ofPathS2S_tF">fileExtension(ofPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2052,6 +2232,11 @@ or directory to which it points.</p>
                         <p>Return the longest common sub-path among self and each given argument. Segment of sub-path is the
 smallest unit of commonality, meaning this is different from common string prefix: <code>/usr/lib</code> and
 <code>/usr/lib64</code>&lsquo;s common path is <code>/usr</code> as opposed to <code>/usr/lib</code>.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Relationship.html#/s:6Pathos10commonPath10amongPaths__S2S_S2SdtF">commonPath(amongPaths:_:_:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2120,6 +2305,11 @@ smallest unit of commonality, meaning this is different from common string prefi
 This is a pure computation: the filesystem is not accessed to confirm the existence or nature of <code>path</code> or
 <code>startingPath</code>.
 Example: starting from <code>/Users/dan</code>, the relative path of <code>/</code> would be <code>../..</code>.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Relationship.html#/s:6Pathos12relativePath02ofC0S2S_tKF">relativePath(ofPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2176,7 +2366,11 @@ Example: starting from <code>/Users/dan</code>, the relative path of <code>/</co
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Relationship.html#/s:6Pathos19expandUserDirectory6inPathS2S_tKF">expandUserDirectory(inPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2206,7 +2400,11 @@ Example: starting from <code>/Users/dan</code>, the relative path of <code>/</co
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Analyzing Paths.html#/s:6Pathos12absolutePath02ofC0S2S_tKF">absolutePath(ofPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2239,6 +2437,11 @@ Example: starting from <code>/Users/dan</code>, the relative path of <code>/</co
                         <p>Return the relative location from the current working directory. The original value is returned if an
 error was encountered while trying to access current working directory.
 Example: starting from <code>/Users/dan</code>, the relative path of <code>/</code> would be <code>../..</code>.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Relationship.html#/s:6Pathos12relativePath02ofC0S2S_tKF">relativePath(ofPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2275,6 +2478,11 @@ Example: starting from <code>/Users/dan</code>, the relative path of <code>/</co
                         <p>Return the canonical path of self, eliminating any symbolic links encountered in the
 path (if they are supported by the operating system). The original path is returned if any error
 occurs (see documentation for <code><a href="../Analyzing Paths.html#/s:6Pathos8realPath02ofC0S2S_tKF">realPath(ofPath:)</a></code> for errors that could occur).</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Analyzing Paths.html#/s:6Pathos8realPath02ofC0S2S_tKF">realPath(ofPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2312,6 +2520,11 @@ occurs (see documentation for <code><a href="../Analyzing Paths.html#/s:6Pathos8
 
 <p>If an error is encountered while reading the permission, <code>FilePermission(rawValue: 0)</code> will be the
 value. If an error is encountered while setting the permission, this will be a no-op.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../System Attributes.html#/s:6Pathos11permissions7forPathAA14FilePermissionVSS_tKF">permissions(forPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2343,6 +2556,11 @@ value. If an error is encountered while setting the permission, this will be a n
                       <div class="abstract">
                         <p>Set additional permissions to existing permission at this path. If this is an symbolic link, the
 permission for the link itself will be changed.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../System Attributes.html#/s:6Pathos3add_6toPathyAA14FilePermissionV_SStKF">add(_:toPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2374,6 +2592,11 @@ permission for the link itself will be changed.</p>
                       <div class="abstract">
                         <p>Remove permissions from existing permission at a path. If this is an symbolic link, the
 permission for the link itself will be changed.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../System Attributes.html#/s:6Pathos6remove_7forPathyAA14FilePermissionV_SStKF">remove(_:forPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2412,6 +2635,11 @@ will be read.</p>
 
 <p>If an error is encounterd while opening or reading the file, no bytes
 will be returned.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../File IO.html#/s:6Pathos9readBytes6atPathSays5UInt8VGSS_tKF">readBytes(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2442,6 +2670,11 @@ will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Read the content of file at this path as an UTF-8 string. If the path points to a directory, empty string will be returned. If other encoding is desired, use <code>readBytes</code> and encode separetely. If an error is encountered opening the file, an empty string will be returned.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../File IO.html#/s:6Pathos10readString6atPathS2S_tKF">readString(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2475,7 +2708,11 @@ will be returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../File IO.html#/s:6Pathos5write_6atPath17createIfNecessary10permissionyx_SSSbAA14FilePermissionVSgtKSlRzSz7ElementRpzlF">write(_:atPath:createIfNecessary:permission:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2506,7 +2743,11 @@ will be returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../File IO.html#/s:6Pathos5write_6atPath17createIfNecessary10permissionyx_SSSbAA14FilePermissionVSgtKSlRzSz7ElementRpzlF">write(_:atPath:createIfNecessary:permission:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2542,6 +2783,11 @@ will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Create a symbolic link for file or directory at this path in the location <code>destination</code>.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../File IO.html#/s:6Pathos18createSymbolicLink8fromPath02toF0ySS_SStKF">createSymbolicLink(fromPath:toPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2595,6 +2841,11 @@ will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Return a string representing the path to which the symbolic link points. The result may be either an absolute or relative pathname.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../File IO.html#/s:6Pathos16readSymbolicLink6atPathS2S_tKF">readSymbolicLink(atPath:)</a></code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2656,6 +2907,11 @@ argument to all functions involving a temporary path.</p>
 
 <p>Pathos calls <code>searchForDefaultTemporaryDirectory</code> to calculate this value. The result of this search is
 cached. You can use the same method to reset this value if needed.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code>Pathos.defaultTemporaryDirectory</code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2687,14 +2943,16 @@ cached. You can use the same method to reset this value if needed.</p>
                       <div class="abstract">
                         <p>Searches a standard list of directories to find one which the calling user can create files in.
 The list is:</p>
-
-<ul>
 <li>The directory named by the TMPDIR environment variable.</li>
 <li>The directory named by the TEMP environment variable.</li>
 <li>The directory named by the TMP environment variable.</li>
 <li>The directories <code>/tmp</code>, <code>/var/tmp</code>, and <code>/usr/tmp</code>, in that order.</li>
 <li><p>As a last resort, the current working directory.</p></li>
-</ul>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code>searchForDefaultTemporaryDirectory()</code>.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2728,7 +2986,11 @@ The list is:</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code>createTemporaryFile(suffix:prefix:inDirectory:)</code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2758,7 +3020,11 @@ The list is:</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code>createTemporaryDirectory(suffix:prefix:inDirectory:)</code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2788,7 +3054,11 @@ The list is:</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code>withTemporaryDirectory(suffix:prefix:inDirectory:performAction:)</code>.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -2810,7 +3080,7 @@ The list is:</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://github.com/dduan/Pathos" target="_blank" rel="external">Daniel Duan</a>. All rights reserved. (Last updated: 2019-03-17)</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/dduan/Pathos" target="_blank" rel="external">Daniel Duan</a>. All rights reserved. (Last updated: 2019-03-23)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
