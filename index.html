@@ -200,6 +200,9 @@
                 <a class="nav-group-task-link" href="Relationship.html#/s:6Pathos4join5paths__S2S_S2SdtF">join(paths:_:_:)</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Relationship.html#/s:6Pathos1poiyxx_xtAA17PathRepresentableRzlF">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Relationship.html#/s:6Pathos19expandUserDirectory6inPathS2S_tKF">expandUserDirectory(inPath:)</a>
               </li>
             </ul>
@@ -316,10 +319,9 @@
             
             <h1 id='pathos' class='heading'>Pathos</h1>
 
-<p>A file management library for Swift.</p>
-<h2 id='overview' class='heading'>Overview</h2>
+<p>Pathos is everything you need for file system¹ inquiry and manipulation.</p>
 
-<p>For a taste Pathos, let&rsquo;s generate a static site from Markdown files!</p>
+<p>For a taste what that means, let&rsquo;s generate a static site from Markdown files!</p>
 <pre class="highlight swift"><code><span class="c1">// Create a unique, temporary directory.</span>
 <span class="k">let</span> <span class="nv">temporaryRoot</span> <span class="o">=</span> <span class="k">try</span> <span class="nf">createTemporaryDirectory</span><span class="p">()</span>
 
@@ -346,30 +348,44 @@
 <span class="k">try</span> <span class="nf">movePath</span><span class="p">(</span><span class="n">temporaryRoot</span><span class="p">,</span> <span class="nv">toPath</span><span class="p">:</span> <span class="s">"output"</span><span class="p">)</span>
 </code></pre>
 
-<p>Pathos offers more conventional OOP interfaces to all of these functions as
-well.</p>
+<p>Pathos offers conventional OOP interfaces to all of these functions as well.</p>
 
 <p>Read the <a href="https://dduan.github.io/Pathos">documentation</a> to learn more.</p>
 
 <p>For an example of real application, checkout <a href="https://github.com/dduan/tre">tre</a>.</p>
-<h2 id='design' class='heading'>Design</h2>
 
-<p>Pathos is designed with the following philosophy in mind.</p>
+<p>¹ Unix <a href="https://en.wikipedia.org/wiki/Virtual_file_system">virtual file system</a>, as opposed to underlying system such as APFS,
+Ext4, btrfs etc.</p>
+<h2 id='installation' class='heading'>Installation</h2>
+<h4 id='with-a-href-http-cocoapods-org-cocoapods-a' class='heading'>With <a href="http://cocoapods.org/">CocoaPods</a></h4>
+<pre class="highlight ruby"><code><span class="n">use_frameworks!</span>
+
+<span class="n">pod</span> <span class="s2">"Pathos"</span>
+</code></pre>
+<h4 id='with-a-href-https-github-com-carthage-carthage-carthage-a' class='heading'>With <a href="https://github.com/Carthage/Carthage">Carthage</a></h4>
+<pre class="highlight plaintext"><code>github "dduan/Pathos"
+</code></pre>
+<h4 id='with-a-href-https-swift-org-package-manager-swiftpm-a' class='heading'>With <a href="https://swift.org/package-manager">SwiftPM</a></h4>
+<pre class="highlight plaintext"><code>.package(url: "http://github.com/dduan/Pathos", from: "0.1.2")
+</code></pre>
+<h2 id='design-goals' class='heading'>Design Goals</h2>
 
 <ol>
 <li><strong>Provide as few abstractions atop POSIX file API as possible, but no
 fewer.</strong> Make conventional C APIs Swift-y, but avoid over-abstraction. Use
 string for path values for efficiency and simplicity. User can trivially and
-incrementally add on abstractions for their needs. A <em>super</em> simple protocol,
-<code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, paired with a equally simple <code><a href="Structs/Path.html">Path</a></code> type, serve as
-bridge to the OO world.</li>
+incrementally add on abstractions for their needs.</li>
 <li><strong>Battery included</strong>. Include a well-rounded set of convenience for file
 manipulations. (Python users, for example, should feel right at home).</li>
-<li><strong>An object-oriented secondary layer hides system errors</strong>. In production
-systems, specific POSIX error code is often not more actionable than <em>some</em>
-indication that things went wrong. This additional layer also hides most
-original system error. For example, instead of throwing out errors such as
-lack of permission, <code>PathRepresentable.delete()</code> simply returns <code>false</code> to
+<li><strong>Support OOP</strong>. Almost everything in Pathos is available in 2 paradigms:
+procedural (free functions) and OOP (methods). A <em>super</em> simple protocol,
+<code><a href="Protocols/PathRepresentable.html">PathRepresentable</a></code>, serves as the root for all functionalities.</li>
+<li><strong>Error handling can be optional</strong>. In practice, specific POSIX error code is
+often not more actionable than <em>some</em> indication that things went wrong.
+Therefore, the OOP interfaces from Pathos hides the system errors. Users can
+opt in and out of the overhead of dealing with POSIX errors by switching
+between paradigms. For example, instead of throwing out errors such as lack
+of permission, <code>PathRepresentable.delete()</code> simply returns <code>false</code> to
 indication the operation failure.</li>
 </ol>
 <h2 id='development' class='heading'>Development</h2>
@@ -416,7 +432,7 @@ installed in your host).</li>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://github.com/dduan/Pathos" target="_blank" rel="external">Daniel Duan</a>. All rights reserved. (Last updated: 2019-03-24)</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/dduan/Pathos" target="_blank" rel="external">Daniel Duan</a>. All rights reserved. (Last updated: 2019-03-30)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

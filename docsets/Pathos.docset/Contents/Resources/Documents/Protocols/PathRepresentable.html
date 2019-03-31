@@ -201,6 +201,9 @@
                 <a class="nav-group-task-link" href="../Relationship.html#/s:6Pathos4join5paths__S2S_S2SdtF">join(paths:_:_:)</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Relationship.html#/s:6Pathos1poiyxx_xtAA17PathRepresentableRzlF">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Relationship.html#/s:6Pathos19expandUserDirectory6inPathS2S_tKF">expandUserDirectory(inPath:)</a>
               </li>
             </ul>
@@ -1521,7 +1524,8 @@ the results.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">copy</span><span class="p">(</span><span class="n">to</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">PathRepresentable</span><span class="p">,</span> <span class="nv">followSymbolicLink</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">chunkSize</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">16</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">copy</span><span class="p">(</span><span class="n">to</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">PathRepresentable</span><span class="p">,</span> <span class="nv">followSymbolicLink</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">chunkSize</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">16</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1742,7 +1746,8 @@ symbolic links will not be found on Linux, but it will be included on Darwin.</p
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createDirectory</span><span class="p">(</span><span class="nv">createParents</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">permission</span><span class="p">:</span> <span class="kt"><a href="../Structs/FilePermission.html">FilePermission</a></span> <span class="o">=</span> <span class="mi">0</span><span class="n">o0755</span><span class="p">,</span> <span class="nv">failIfAlreadyExists</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">createDirectory</span><span class="p">(</span><span class="nv">createParents</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">permission</span><span class="p">:</span> <span class="kt"><a href="../Structs/FilePermission.html">FilePermission</a></span> <span class="o">=</span> <span class="mi">0</span><span class="n">o0755</span><span class="p">,</span> <span class="nv">failIfAlreadyExists</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1828,7 +1833,8 @@ symbolic links will not be found on Linux, but it will be included on Darwin.</p
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">delete</span><span class="p">(</span><span class="nv">recursive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">delete</span><span class="p">(</span><span class="nv">recursive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1872,7 +1878,8 @@ or directory to which it points.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">move</span><span class="p">(</span><span class="n">to</span> <span class="nv">destination</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">move</span><span class="p">(</span><span class="n">to</span> <span class="nv">destination</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -2715,7 +2722,7 @@ will be returned.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="n">write</span><span class="o">&lt;</span><span class="kt">Bytes</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">bytes</span><span class="p">:</span> <span class="kt">Bytes</span><span class="p">,</span> <span class="nv">createIfNecessary</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">permission</span><span class="p">:</span> <span class="kt"><a href="../Structs/FilePermission.html">FilePermission</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">Bytes</span><span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">Bytes</span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt">BinaryInteger</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">write</span><span class="o">&lt;</span><span class="kt">Bytes</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">bytes</span><span class="p">:</span> <span class="kt">Bytes</span><span class="p">,</span> <span class="nv">createIfNecessary</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">permission</span><span class="p">:</span> <span class="kt"><a href="../Structs/FilePermission.html">FilePermission</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">Bytes</span> <span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">Bytes</span><span class="o">.</span><span class="kt">Element</span> <span class="p">:</span> <span class="kt">BinaryInteger</span></code></pre>
 
                         </div>
                       </div>
@@ -2789,7 +2796,8 @@ will be returned.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createSymbolicLink</span><span class="p">(</span><span class="n">at</span> <span class="nv">destination</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">createSymbolicLink</span><span class="p">(</span><span class="n">at</span> <span class="nv">destination</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -3075,7 +3083,7 @@ The list is:</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://github.com/dduan/Pathos" target="_blank" rel="external">Daniel Duan</a>. All rights reserved. (Last updated: 2019-03-24)</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/dduan/Pathos" target="_blank" rel="external">Daniel Duan</a>. All rights reserved. (Last updated: 2019-03-30)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
