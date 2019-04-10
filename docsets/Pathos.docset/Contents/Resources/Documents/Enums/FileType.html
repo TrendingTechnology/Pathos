@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>FilePermission Structure Reference</title>
+    <title>FileType Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/FilePermission" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Enum/FileType" class="dashAnchor"></a>
 
-    <a title="FilePermission Structure Reference"></a>
+    <a title="FileType Enumeration Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -38,7 +38,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">Pathos Reference</a>
       <img class="carat" src="../img/carat.png" />
-      FilePermission Structure Reference
+      FileType Enumeration Reference
     </p>
 
     <div class="content-wrapper">
@@ -281,15 +281,15 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>FilePermission</h1>
+            <h1>FileType</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FilePermission</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">FileType</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                 </div>
               </div>
-            <p>Represents the POSIX file permission bits. These bits determines read/write/execution access to a file as
-well as some miscellaneous information.</p>
+            <p>Type of files found in standards such as POSIX.
+NOTE: a directory is a type of file as everything else.</p>
 
           </div>
         </section>
@@ -301,9 +301,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV8rawValues6UInt16Vvp"></a>
-                    <a name="//apple_ref/swift/Property/rawValue" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV8rawValues6UInt16Vvp">rawValue</a>
+                    <a name="/s:6Pathos8FileTypeO7unknownyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unknown" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO7unknownyA2CmF">unknown</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -311,14 +311,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The file permission as the native <code>mode_t</code> type. A de-abstraction to help interact with POSIX APIs directly.</p>
+                        <p>Unknown type.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="n">mode_t</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknown</span></code></pre>
 
                         </div>
                       </div>
@@ -328,9 +328,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV8rawValueACs6UInt16V_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(rawValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV8rawValueACs6UInt16V_tcfc">init(rawValue:)</a>
+                    <a name="/s:6Pathos8FileTypeO4pipeyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/pipe" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO4pipeyA2CmF">pipe</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -338,14 +338,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a <code>FilePermission</code> from native <code>mode_t</code>.</p>
+                        <p>FIFO pipe.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="n">mode_t</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">pipe</span></code></pre>
 
                         </div>
                       </div>
@@ -355,9 +355,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV8ownerAllACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/ownerAll" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV8ownerAllACvpZ">ownerAll</a>
+                    <a name="/s:6Pathos8FileTypeO15characterDeviceyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/characterDevice" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO15characterDeviceyA2CmF">characterDevice</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -365,14 +365,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is equivalent to <code>[.ownerRead, .ownerWrite, .ownerExecute]</code> (<code>S_IRWXU</code>).</p>
+                        <p>Character device, or character special file.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ownerAll</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">characterDevice</span></code></pre>
 
                         </div>
                       </div>
@@ -382,9 +382,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV9ownerReadACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/ownerRead" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV9ownerReadACvpZ">ownerRead</a>
+                    <a name="/s:6Pathos8FileTypeO9directoryyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/directory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO9directoryyA2CmF">directory</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -392,14 +392,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Read permission bit for the owner of the file (<code>S_IRUSR</code>).</p>
+                        <p>Directory.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ownerRead</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">directory</span></code></pre>
 
                         </div>
                       </div>
@@ -409,9 +409,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV10ownerWriteACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/ownerWrite" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV10ownerWriteACvpZ">ownerWrite</a>
+                    <a name="/s:6Pathos8FileTypeO11blockDeviceyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/blockDevice" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO11blockDeviceyA2CmF">blockDevice</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -419,14 +419,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Write permission bit for the owner of the file (<code>S_IWUSR</code>).</p>
+                        <p>Block special files.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ownerWrite</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">blockDevice</span></code></pre>
 
                         </div>
                       </div>
@@ -436,9 +436,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV12ownerExecuteACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/ownerExecute" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV12ownerExecuteACvpZ">ownerExecute</a>
+                    <a name="/s:6Pathos8FileTypeO4fileyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/file" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO4fileyA2CmF">file</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -446,14 +446,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Execute (for ordinary files) or search (for directories) permission bit for the owner of the file (<code>S_IXUSR</code>).</p>
+                        <p>A regular file.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ownerExecute</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">file</span></code></pre>
 
                         </div>
                       </div>
@@ -463,9 +463,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV8groupAllACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/groupAll" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV8groupAllACvpZ">groupAll</a>
+                    <a name="/s:6Pathos8FileTypeO12symbolicLinkyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/symbolicLink" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO12symbolicLinkyA2CmF">symbolicLink</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -473,14 +473,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is equivalent to <code>[.groupRead, .groupWrite, .groupExecute]</code> (<code>S_IRWXG</code>).</p>
+                        <p>A symbolic link, or symlink.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">groupAll</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">symbolicLink</span></code></pre>
 
                         </div>
                       </div>
@@ -490,9 +490,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV9groupReadACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/groupRead" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV9groupReadACvpZ">groupRead</a>
+                    <a name="/s:6Pathos8FileTypeO6socketyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/socket" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO6socketyA2CmF">socket</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -500,14 +500,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Read permission bit for the group owner of the file (<code>S_IRGRP</code>).</p>
+                        <p>A socket.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">groupRead</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">socket</span></code></pre>
 
                         </div>
                       </div>
@@ -517,9 +517,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV10groupWriteACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/groupWrite" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV10groupWriteACvpZ">groupWrite</a>
+                    <a name="/s:6Pathos8FileTypeO05posixbC0ACs5Int32V_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(posixFileType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO05posixbC0ACs5Int32V_tcfc">init(posixFileType:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -527,14 +527,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Write permission bit for the group owner of the file (<code>S_IWGRP</code>).</p>
+                        <p>Creates a <code>FileType</code> from a POSIX file type such as <code>DT_REG</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">groupWrite</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">posixFileType</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -544,9 +544,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV12groupExecuteACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/groupExecute" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV12groupExecuteACvpZ">groupExecute</a>
+                    <a name="/s:6Pathos8FileTypeO9posixModeACs6UInt16V_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(posixMode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO9posixModeACs6UInt16V_tcfc">init(posixMode:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -554,14 +554,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Execute or search permission bit for the group owner of the file (<code>S_IXGRP</code>).</p>
+                        <p>Creates a <code>FileType</code> from a POSIX inode protection mode (<code>stat.st_mode</code>) such as <code>S_IFREG</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">groupExecute</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">posixMode</span><span class="p">:</span> <span class="n">mode_t</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -571,9 +571,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV8otherAllACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/otherAll" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV8otherAllACvpZ">otherAll</a>
+                    <a name="/s:6Pathos8FileTypeO05posixbC0s5Int32Vvp"></a>
+                    <a name="//apple_ref/swift/Property/posixFileType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO05posixbC0s5Int32Vvp">posixFileType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -581,14 +581,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is equivalent to <code>[.otherRead, .otherWrite, .otherExecute]</code> (<code>S_IRWXO</code>).</p>
+                        <p>A corresponding POSIX file type such as <code>DT_REG</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">otherAll</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">posixFileType</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -598,9 +598,9 @@ well as some miscellaneous information.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6Pathos14FilePermissionV9otherReadACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/otherRead" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV9otherReadACvpZ">otherRead</a>
+                    <a name="/s:6Pathos8FileTypeO9posixModes6UInt16Vvp"></a>
+                    <a name="//apple_ref/swift/Property/posixMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Pathos8FileTypeO9posixModes6UInt16Vvp">posixMode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -608,191 +608,14 @@ well as some miscellaneous information.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Read permission bit for other users (<code>S_IROTH</code>).</p>
+                        <p>A corresponding POSIX inode protection mode value (<code>stat.st_mode</code>) such as <code>S_IFREG</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">otherRead</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos14FilePermissionV10otherWriteACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/otherWrite" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV10otherWriteACvpZ">otherWrite</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Write permission bit for other users (<code>S_IWOTH</code>).</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">otherWrite</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos14FilePermissionV12otherExecuteACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/otherExecute" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV12otherExecuteACvpZ">otherExecute</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Execute or search permission bit for other users (<code>S_IXOTH</code>).</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">otherExecute</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos14FilePermissionV20setUserIDOnExecutionACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/setUserIDOnExecution" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV20setUserIDOnExecutionACvpZ">setUserIDOnExecution</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This is the set-user-ID on execute bit.
-See <a href="http://www.gnu.org/software/libc/manual/html_node/Process-Persona.html#Process-Persona">Process Persona</a>
-to learm more.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">setUserIDOnExecution</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos14FilePermissionV21setGroupIDOnExecutionACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/setGroupIDOnExecution" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV21setGroupIDOnExecutionACvpZ">setGroupIDOnExecution</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This is the set-group-ID on execute bit
-See <a href="http://www.gnu.org/software/libc/manual/html_node/Process-Persona.html#Process-Persona">Process Persona</a>
-to learm more.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">setGroupIDOnExecution</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:6Pathos14FilePermissionV24saveSwappedTextAfterUserACvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/saveSwappedTextAfterUser" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6Pathos14FilePermissionV24saveSwappedTextAfterUserACvpZ">saveSwappedTextAfterUser</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This is the sticky bit.</p>
-
-<p>For a directory it gives permission to delete a file in that directory only if you own that file.
-Ordinarily, a user can either delete all the files in a directory or cannot delete any of them (based on
-whether the user has write permission for the directory). The same restriction applies—you must have
-both write permission for the directory and own the file you want to delete. The one exception is that
-the owner of the directory can delete any file in the directory, no matter who owns it (provided the
-owner has given himself write permission for the directory). This is commonly used for the /tmp
-directory, where anyone may create files but not delete files created by other users.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">saveSwappedTextAfterUser</span><span class="p">:</span> <span class="kt">FilePermission</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:s27ExpressibleByIntegerLiteralP07integerD0x0cD4TypeQz_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(integerLiteral:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s27ExpressibleByIntegerLiteralP07integerD0x0cD4TypeQz_tcfc">init(integerLiteral:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">integerLiteral</span><span class="p">:</span> <span class="kt">UInt16</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">posixMode</span><span class="p">:</span> <span class="n">mode_t</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
